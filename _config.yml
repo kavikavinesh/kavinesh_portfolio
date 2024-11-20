@@ -1,2 +1,10 @@
-source: ./docs
-destination: ./docs/_site
+title: Your Site Title
+description: A simple description of your site.
+theme: jekyll-theme-primer
+
+# Optional, depending on your needs
+markdown: kramdown
+
+# Disable SCSS converter if not using SCSS
+sass:
+  style: compressed
