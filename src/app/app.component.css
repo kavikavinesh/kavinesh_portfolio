@@ -1,0 +1,363 @@
+/* app.component.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Taskbar (Navigation Bar) */
+  .taskbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color:white;
+    padding: 15px 0;
+    z-index: 1000;
+  }
+  
+  .taskbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .taskbar a {
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .taskbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home Section */
+ /* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 0 20px; /* Adds some padding to prevent the content from touching the edges */
+}
+
+.home .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures content is aligned properly */
+    max-width: 1200px; /* Limit width for better alignment on large screens */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.home .left {
+    margin-right: 70px;
+    max-width: 700px; /* Restricts the width of the left column */
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.career-objective {
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.6; /* Adds some space between lines for readability */
+    font-style: italic; /* Optional for emphasis */
+    color: #555; /* Slightly lighter text for the career objective */
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 250px; /* Slightly bigger width */
+    height: 420px; /* Oval shape (height smaller than width) */
+    border-radius: 50%; /* Keeps the image oval */
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.3s ease; /* Optional scaling effect on hover */
+}
+
+.profile-photo:hover {
+    transform: scale(1.5); /* Slightly zoom in on hover */
+}
+
+  
+  /* Work Section */
+  .work {
+    padding: 92px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .skill-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+  }
+
+  
+  .skill-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -19px 6px 20px 0px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .skill-box h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .skill-box ul {
+    list-style-type: none;
+  }
+  
+  .skill-box ul li {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* About Section */
+  /* About Section */
+.about {
+    background-color: #fff; /* White background for the entire section */
+    color: black;
+    padding: 20;
+    border-radius: 8px;
+    margin-top: 128px; /* Adds space between this section and the one above */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: flex-start; /* Align content to the left */
+    gap: 20px;
+  }
+  
+  /* Heading for About Me */
+  .about h2 {
+    
+    color: #333; /* White text color */
+    padding: 0;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+    display: inline-block; /* Ensures the background color is only applied to the heading */
+  }
+  
+  /* Styling for text in the About section */
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1px;
+  }
+  
+  /* Flexbox for the right-side alignment of name and social links */
+  .about-info {
+    display: flex;
+    justify-content: space-between; /* Space between the name/info and social icons */
+    width: 100%; /* Full width to make sure elements are spaced out */
+    align-items: center;
+  }
+  
+  /* Social Links Container */
+  .social-links {
+    display: flex;
+    flex-direction: row; /* Arrange social icons horizontally */
+    gap: 20px; /* Space between icons */
+    align-items: center; /* Center the icons vertically */
+  }
+  
+  /* Social icon styling */
+  .social-links a {
+    width: 40px; /* Size of the icon */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-links a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Round icon */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+  
+  /* Styling for the icons */
+ 
+  
+  .social-links a:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+
+/* Work Section */
+.work {
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  *[_ngcontent-udn-c1] {
+    margin: 5;
+    box-sizing: border-box;
+}
+  
+  .experience {
+    margin-top: 40px;
+  }
+  
+  .company h4 {
+    font-size: 1.6rem;
+    color: #333;
+  }
+  
+  .company h4 i {
+    color: #6c6c6c; /* Light gray color for the Accenture logo */
+    margin-right: 10px;
+  }
+  
+  .project p,
+  .technologies p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .project em,
+  .technologies em {
+    font-style: italic;
+  }
+  
+  .achievements {
+    margin-top: 20px;
+  }
+  
+  .achievements ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .achievements li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .achievements li:before {
+    content: '✓';
+    color: green;
+    margin-right: 10px;
+  }
+  
+  /* Contact Section */
+.contact {
+    background-color: #939090; /* Light gray background */
+    color: black;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 60px; /* Adds space between this section and the one above */
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px; /* Adds space after the heading */
+    text-align: center; /* Centers the heading */
+  }
+  
+  /* Styling for the form */
+  .contact form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+    gap: 20px; /* Space between form fields */
+    max-width: 500px; /* Limiting width for better appearance */
+    margin: 0 auto; /* Center-align the form */
+  }
+  
+  /* Styling for each input field and textarea */
+  .contact label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .contact input, 
+  .contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width for inputs */
+  }
+  
+  .contact textarea {
+    resize: vertical; /* Allow vertical resizing for the textarea */
+    height: 150px; /* Set a fixed height for the textarea */
+  }
+  
+  /* Button styling */
+  .contact button {
+    background-color: #333; /* Dark button background */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background-color: #555; /* Darker background color on hover */
+  }
+  
+
+  /* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text */
+    padding: 20px 0; /* Vertical padding for spacing */
+    text-align: center; /* Centers the text horizontally */
+    position: relative; /* To position it properly at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width of the page */
+  }
+  
+  footer p {
+    margin: 0; /* Removes default margin */
+    font-size: 1rem; /* Font size for copyright text */
+  }
+  
